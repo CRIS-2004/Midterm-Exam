@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('template.php.txt');
+        return view('template.php');
     }
 }
 ?>
