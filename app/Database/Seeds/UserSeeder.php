@@ -8,50 +8,40 @@ class UserSeeder extends Seeder
 {
     public function run()
     {
-        $students = [
+       $data = [
             [
-                'user_id' => '00012345678',
-                'name' => 'Cris Parcon',
-                'age' => 21,
-                'email' => 'crislawrence.parcon@gmail.com',
-                'userType' => 'Student'
+                'name'       => 'System Administrator',
+                'email'      => 'admin@lms.com',
+                'password'   => password_hash('admin123', PASSWORD_DEFAULT),
+                'role'       => 'admin',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
-             [
-                 'user_id' => '00023456789',
-                'name' => 'Justin Mics',
-                'age' => 15,
-                'email' => 'justinmics@gmail.com',
-                'userType' => 'Student'
-            ]
-        ];
-        $instructors = [
             [
-                 'user_id' => '00034567890',
-               'name' => 'Micheal Victor',
-                'age' => 30,
-                'email' => 'michael@gmail.com',
-                'userType' => 'Insructor'
+                'name'       => 'John Smith',
+                'email'      => 'john@lms.com',
+                'password'   => password_hash('user123', PASSWORD_DEFAULT),
+                'role'       => 'user',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
-              [
-                 'user_id' => '00045678901',
-               'name' => 'Steve Harry',
-                'age' => 35,
-                'email' => 'steve@gmail.com',
-                'userType' => 'Insructor'
-            ]
-        ];
-        $admin = [
             [
-                 'user_id' => '00056789012',
-                'name' => 'Lorenzo Parcs',
-                'age' => 40,
-                'email' => 'Lparcs@gmail.com',
-                'userType' => 'Admin'
-            ]
+                'name'       => 'Jane Doe',
+                'email'      => 'jane@lms.com',
+                'password'   => password_hash('user123', PASSWORD_DEFAULT),
+                'role'       => 'user',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'name'       => 'Bob Johnson',
+                'email'      => 'bob@lms.com',
+                'password'   => password_hash('user123', PASSWORD_DEFAULT),
+                'role'       => 'user',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
         ];
-        $this->db->table('users')->insertBatch($students);
-        $this->db->table('users')->insertBatch($instructors);
-        $this->db->table('users')->insertBatch($admin);
+       $this->db->table('users')->insertBatch($data);
     }
-
 }
