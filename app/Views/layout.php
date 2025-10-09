@@ -30,10 +30,6 @@
                     <li class="nav-item">
                         <a class="nav-link <?= (current_url() == site_url('contact')) ? 'active' : '' ?>" href="<?= site_url('contact') ?>">Contact</a>
                     </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link <?= (current_url() == site_url('dashboard')) ? 'active' : '' ?>" href="<?= site_url('dashboard') ?>">Dashboard</a>
-                    </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
                     <?php if (session()->get('isLoggedIn')): ?>

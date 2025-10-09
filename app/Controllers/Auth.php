@@ -24,7 +24,7 @@ class Auth extends BaseController
      */
     public function register()
     {
-        // If user is already logged in, redirect to dashboard
+        //redirect to dashboard
         if ($this->isLoggedIn()) {
             return redirect()->to(base_url('dashboard'));
         }
@@ -37,7 +37,8 @@ class Auth extends BaseController
                 'name'             => 'required|min_length[3]|max_length[100]',
                 'email'            => 'required|valid_email|is_unique[users.email]',
                 'password'         => 'required|min_length[6]',
-                'password_confirm' => 'required|matches[password]'
+                'password_confirm' => 'required|matches[password]',
+                'role'             => 'required'
             ];
 
             $messages = [
@@ -72,7 +73,7 @@ class Auth extends BaseController
                     'name'       => $this->request->getPost('name'),
                     'email'      => $this->request->getPost('email'),
                     'password'   => $hashedPassword,
-                    'role'       => 'user',
+                    'role'       => $this->request->getPost('role'),
                     'created_at' => date('Y-m-d H:i:s'),
                     'updated_at' => date('Y-m-d H:i:s')
                 ];
@@ -102,7 +103,7 @@ class Auth extends BaseController
     public function login()
     {
         // If user is already logged in, redirect to dashboard
-        if ($this->isLoggedIn()) {
+       $this->session->set($sessionData);
             return redirect()->to(base_url('dashboard'));
         }
 
@@ -123,7 +124,7 @@ class Auth extends BaseController
             if ($login === 'admin' && $password === 'admin123') {
                 $sessionData = [
                     'userID'     => 1,
-                    'name'       => 'Admi',
+                    'name'       => 'Admin',
                     'email'      => 'admin@rmmc.com',
                     'role'       => 'admin',
                     'isLoggedIn' => true
@@ -152,7 +153,6 @@ class Auth extends BaseController
                 ];
 
                 $this->session->set($sessionData);
-                $this->session->setFlashdata('success', 'Welcome back, ' . $user['name'] . '!');
                 return redirect()->to(base_url('dashboard'));
                 
             } else {

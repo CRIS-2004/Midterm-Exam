@@ -1,79 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title ?? 'Dashboard - LMS' ?></title>
-    <!-- Bootstrap CSS for styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?= $title ?? 'Dashboard - WebSystem' ?></title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.6) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar-brand {
+      color: #00d4ff !important;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(0, 212, 255, 0.8);
+    }
+
+    .navbar-text {
+      font-weight: 500;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card-title {
+      color: #00d4ff;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(0, 212, 255, 0.6);
+    }
+
+    .card.bg-primary {
+      background: linear-gradient(90deg, #00c6ff, #0072ff) !important;
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 0 16px rgba(0, 212, 255, 0.7);
+    }
+
+    .btn-danger {
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(255, 77, 77, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .btn-danger:hover {
+      background-color: #ff4d4d;
+      transform: scale(1.05);
+      box-shadow: 0 0 18px rgba(255, 77, 77, 0.9);
+    }
+
+    .alert {
+      border-radius: 12px;
+    }
+  </style>
 </head>
-<!-- Dashboard page for logged-in users -->
-<body class="bg-light">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="<?= base_url('dashboard') ?>">LMS</a>
-            <div class="navbar-nav ms-auto">
-                <!-- Display logged-in user's name -->
-                <span class="navbar-text text-white">
-                    <?= esc($user['name']) ?>
-                </span>
-            </div>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="<?= base_url('dashboard') ?>">WebSystem</a>
+      <div class="navbar-nav ms-auto">
+        <!-- Display logged-in user's name -->
+        <span class="navbar-text text-white">
+          <?= esc($user['name']) ?>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <?php if (session()->getFlashdata('success')): ?>
+      <div class="alert alert-success">
+        <?= session()->getFlashdata('success') ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if (session()->getFlashdata('error')): ?>
+      <div class="alert alert-danger">
+        <?= session()->getFlashdata('error') ?>
+      </div>
+    <?php endif; ?>
+
+    <!-- Welcome -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="card bg-primary text-white">
+          <div class="card-body text-center">
+            <h2>Welcome, <?= esc($user['name']) ?>!</h2>
+          </div>
         </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container mt-4">
-        <?php if (session()->getFlashdata('success')): ?>
-            <!-- Success message display -->
-            <div class="alert alert-success">
-                <?= session()->getFlashdata('success') ?>
-            </div>
-        <?php endif; ?>
-
-        <?php if (session()->getFlashdata('error')): ?>
-            <!-- Error message display -->
-            <div class="alert alert-danger">
-                <?= session()->getFlashdata('error') ?>
-            </div>
-        <?php endif; ?>
-
-        <!-- Welcome -->
-        <div class="row mb-4">
-            <div class="col-12">
-                <!-- Welcome message card -->
-                <div class="card bg-primary text-white">
-                    <div class="card-body text-center">
-                        <h2>Welcome, <?= esc($user['name']) ?>!</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- User Info -->
-        <div class="row mb-4">
-            <div class="col-md-6">1
-                <!-- User information display card -->
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">User Information</h5>
-                        <p><strong>Name:</strong> <?= esc($user['name']) ?></p>
-                        <p><strong>Email:</strong> <?= esc($user['email']) ?></p>
-                        <p><strong>Role:</strong> <?= ucfirst(esc($user['role'])) ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Logout Button -->
-        <div class="position-fixed bottom-0 start-0 p-3">
-            <!-- Fixed logout button in bottom-left corner -->
-            <a href="<?= base_url('logout') ?>" class="btn btn-danger" 
-               onclick="return confirm('Logout?')">Logout</a>
-        </div>
+      </div>
     </div>
 
-    <!-- Bootstrap JavaScript for interactive components -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- User Info -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">User Information</h5>
+            <p><strong>Name:</strong> <?= esc($user['name']) ?></p>
+            <p><strong>Email:</strong> <?= esc($user['email']) ?></p>
+            <p><strong>Role:</strong> <?= esc($user['role']) ?></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="position-fixed bottom-0 start-0 p-3">
+      <a href="<?= base_url('logout') ?>" class="btn btn-danger"
+         onclick="return confirm('Logout?')">Logout</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
