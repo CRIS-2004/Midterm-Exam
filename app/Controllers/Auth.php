@@ -102,10 +102,11 @@ class Auth extends BaseController
      */
     public function login()
     {
-        // If user is already logged in, redirect to dashboard
-       $this->session->set($sessionData);
-            return redirect()->to(base_url('dashboard'));
-        }
+    // If user is already logged in, redirect to dashboard
+    if ($this->isLoggedIn()) {
+        return redirect()->to(base_url('dashboard'));
+    }
+        
 
         // Check for a POST request
         if ($this->request->getMethod() === 'POST') {
@@ -153,7 +154,18 @@ class Auth extends BaseController
                 ];
 
                 $this->session->set($sessionData);
-                return redirect()->to(base_url('dashboard'));
+                 switch ($user['role']) {
+                case 'admin':
+                    return redirect()->to(base_url('admin/dashboard'));
+                case 'teacher':
+                    return redirect()->to(base_url('teacher/dashboard'));
+                case 'student':
+                    return redirect()->to(base_url('student/dashboard'));
+                default:
+                    return redirect()->to(base_url('dashboard'));
+            }
+               
+                
                 
             } else {
                 $this->session->setFlashdata('error', 'Invalid login credentials.');
@@ -161,6 +173,7 @@ class Auth extends BaseController
         }
 
         return view('auth/login');
+    
     }
 
     /**
