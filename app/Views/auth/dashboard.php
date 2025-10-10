@@ -80,12 +80,15 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="<?= base_url('dashboard') ?>">WebSystem</a>
+      <a class="navbar-brand" href="<?= base_url('dashboard') ?>">WebSystem- Parcon Enterprises</a>
       <div class="navbar-nav ms-auto">
         <!-- Display logged-in user's name -->
-        <span class="navbar-text text-white">
-          <?= esc($user['name']) ?>
+        <span class="navbar-text text-white me-3">
+          <?= ucfirst($user['role']) ?>-
+          <?= esc(ucfirst($user['name'])) ?> 
         </span>
+
+        <a href="<?= base_url('logout') ?>" class="btn btn-danger"('Logout?')">Logout</a>
       </div>
     </div>
   </nav>
@@ -108,8 +111,8 @@
     <div class="row mb-4">
       <div class="col-12">
         <div class="card bg-primary text-white">
-          <div class="card-body text-center">
-            <h2>Welcome, <?= esc($user['name']) ?>!</h2>
+          <div class="card-body text-left">
+            <h2>Welcome, <?= ucfirst($user['role']).' '.esc(ucfirst($user['name'])) ?>!</h2>
           </div>
         </div>
       </div>
@@ -121,19 +124,16 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">User Information</h5>
-            <p><strong>Name:</strong> <?= esc($user['name']) ?></p>
+            <p><strong>Name:</strong> <?= esc(ucfirst($user['name'])) ?></p>
             <p><strong>Email:</strong> <?= esc($user['email']) ?></p>
-            <p><strong>Role:</strong> <?= esc($user['role']) ?></p>
+            <p><strong>Role:</strong> <?= esc(ucfirst($user['role'])) ?></p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Logout Button -->
-    <div class="position-fixed bottom-0 start-0 p-3">
-      <a href="<?= base_url('logout') ?>" class="btn btn-danger"
-         onclick="return confirm('Logout?')">Logout</a>
-    </div>
+   
   </div>
 
   <!-- Bootstrap JS -->
