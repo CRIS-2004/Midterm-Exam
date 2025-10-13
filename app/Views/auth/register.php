@@ -88,6 +88,17 @@
     .alert {
       border-radius: 12px;
     }
+     select.form-control {
+    background-color: rgba(255, 255, 255, 0.1);;
+    color:  rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  select.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);;
+    color: rgba(0, 0, 0, 1);;
+    outline: none;
+  }
   </style>
 </head>
 
@@ -155,7 +166,7 @@
                   <label for="role" class="form-label">Role</label>
                   <select class="form-control" id="role" name="role" required>
                       <option value="" disabled <?= old('role') ? '' : 'selected' ?>>Select Role</option>
-                      <option value="admin" <?= old('role') == 'admin' ? 'selected' : '' ?>>Admin</option>
+                      <option value="admin" <?= old('role') == 'Admin' ? 'selected' : '' ?>>Admin</option>
                       <option value="teacher" <?= old('role') == 'teacher' ? 'selected' : '' ?>>Teacher</option>
                       <option value="student" <?= old('role') == 'student' ? 'selected' : '' ?>>Student</option>
                   </select>

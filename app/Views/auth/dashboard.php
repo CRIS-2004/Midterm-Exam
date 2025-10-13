@@ -117,22 +117,45 @@
         </div>
       </div>
     </div>
+<!-- Role-Based Section -->
+<?php $role = $user['role']; ?>
 
-    <!-- User Info -->
+<?php if($role === 'admin'): ?>
     <div class="row mb-4">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">User Information</h5>
-            <p><strong>Name:</strong> <?= esc(ucfirst($user['name'])) ?></p>
-            <p><strong>Email:</strong> <?= esc($user['email']) ?></p>
-            <p><strong>Role:</strong> <?= esc(ucfirst($user['role'])) ?></p>
-          </div>
+        <div class="col-md-6">
+            <div class="card bg-warning text-dark">
+                <div class="card-body">
+                    <h5>Admin Panel</h5>
+                    <p>Manage Users and Settings</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+  <?php elseif($role === 'teacher'): ?>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card bg-warning text-dark">
+                <div class="card-body">
+                    <h5>Teacher Panel</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php elseif($role === 'student'): ?>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card bg-warning text-dark">
+                <div class="card-body">
+                    <h5>Teacher Panel</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <?php endif; ?>
 
-    <!-- Logout Button -->
+ 
    
   </div>
 
