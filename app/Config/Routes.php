@@ -10,6 +10,15 @@ $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 $routes->get('/contact', 'Home::contact');
 
+//Annoucement
+$routes->get('/announcements', 'Announcement::index');
+
+//teacher, admin, student
+$routes->get('/teacher/dashboard', 'Teacher::dashboard');
+$routes->get('/admin/dashboard', 'Admin::dashboard');
+$routes->get('/announcements', 'Announcements::index'); // assuming you have this
+
+
 //Lab 4
 $routes->get('/register', 'Auth::register');     
 $routes->post('/register', 'Auth::register'); 

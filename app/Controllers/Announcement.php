@@ -9,12 +9,11 @@ class Announcement extends BaseController
     public function index()
     {
         // Load the AnnouncementModel to interact with the database
-        $announcementModel = new AnnouncementModel();
+        $model = new AnnouncementModel();
 
         // Fetch all announcements from the database
-        $data['announcements'] = $announcementModel
-                                        ->orderBy('created_at', 'DESC')
-                                        ->findAll();
+        $data['announcements'] = $model->orderBy('created_at', 'DESC')->findAll();
+
 
 
         // Send data to the 'announcements' view file
