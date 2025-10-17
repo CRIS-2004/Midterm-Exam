@@ -179,7 +179,7 @@ class Auth extends BaseController
 
         return view('auth/dashboard', [
             'user'  => $userData,
-            'title' => 'LMS - Dashboard'
+            'title' => 'WebSystem- Parcon Enterprises'
         ]);
     }
 }

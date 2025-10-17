@@ -147,7 +147,7 @@
         <div class="col-md-6">
             <div class="card bg-warning text-dark">
                 <div class="card-body">
-                    <h5>Teacher Panel</h5>
+                    <h5>Student Dashboard</h5>
                     <p></p>
                 </div>
             </div>
