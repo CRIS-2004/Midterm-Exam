@@ -82,12 +82,14 @@
     <div class="container">
       <a class="navbar-brand" href="<?= base_url('dashboard') ?>">WebSystem- Parcon Enterprises</a>
       <div class="navbar-nav ms-auto">
+        <li class="nav-item">
+                        <a class="nav-link <?= (current_url() == site_url('annoucements')) ? 'active' : '' ?>" href="<?= site_url('announcements') ?>">Announcement</a>
+                    </li>
         <!-- Display logged-in user's name -->
         <span class="navbar-text text-white me-3">
           <?= ucfirst($user['role']) ?>-
           <?= esc(ucfirst($user['name'])) ?> 
         </span>
-
         <a href="<?= base_url('logout') ?>" class="btn btn-danger"('Logout?')">Logout</a>
       </div>
     </div>

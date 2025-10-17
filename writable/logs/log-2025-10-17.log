@@ -998,3 +998,228 @@ in APPPATH\Views\layout.php on line 5.
 10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:27:14 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\layout.php on line 5.
+ 1 APPPATH\Views\layout.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\layout.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout', [], true)
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 6 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:17 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:19 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:20 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:21 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:21 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:21 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:21 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:22 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:22 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:22 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:23 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:23 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:23 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:23 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-17 12:28:25 --> ErrorException: Undefined variable $title
+[Method: GET, Route: announcements]
+in APPPATH\Views\announcements.php on line 5.
+ 1 APPPATH\Views\announcements.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Midterm_Exam\\app\\Views\\announcements.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('announcements', [], true)
+ 5 APPPATH\Controllers\Announcement.php(20): view('announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Announcement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcement))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

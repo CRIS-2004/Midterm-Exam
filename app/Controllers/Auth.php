@@ -89,25 +89,40 @@ class Auth extends BaseController
         
   public function login()
 {
+     if ($this->session->get('isLoggedIn') === true) {
+            return redirect()->to(base_url('dashboard'));
+        }
     // Start session
     $session = session();
 
     // Connect to database (without using a model)
     $db = \Config\Database::connect();
    
-
+    if ($this->request->getMethod() === 'POST') {
     // Get email and password from login form
-    $email = $this->request->getPost('email');
+    $login = $this->request->getPost('login');
     $password = $this->request->getPost('password');
 
+    //if the text box is empty
+    if (empty($login) || empty($password)) {
+                $this->session->setFlashdata('error', 'Please enter both login and password.');
+                return view('auth/login');
+            }
+
     // Fetch user manually using query builder
-    $user = $db->table('users')->where('email', $email)->get()->getRowArray();
+    $user = $db->table('users')->where('email', $login)->get()->getRowArray();
+
+     $builder = $this->db->table('users');
+            $user = $builder->where('email', $login)
+                            ->orWhere('name', $login)
+                            ->get()
+                            ->getRowArray();
 
     // Verify user exists and password is correct
     if($user && password_verify($password, $user['password'])) {
 
         // Set session data
-        $session->set([
+        $this->session->set([
             'user_id'   => $user['id'],
             'role'      => $user['role'],
             'isLoggedIn'=> true
@@ -127,8 +142,9 @@ class Auth extends BaseController
     } else {
         // Invalid login attempt
         $session->setFlashdata('error', 'Invalid credentials.');
-        return redirect()->back();
     }
+}
+       return view('auth/login');
 }
 
 
